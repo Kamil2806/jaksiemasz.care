@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jaksiemasz-care.iml" filepath="$PROJECT_DIR$/.idea/modules/jaksiemasz-care.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jaksiemasz-care_main.iml" filepath="$PROJECT_DIR$/.idea/modules/jaksiemasz-care_main.iml" group="jaksiemasz-care" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jaksiemasz-care_test.iml" filepath="$PROJECT_DIR$/.idea/modules/jaksiemasz-care_test.iml" group="jaksiemasz-care" />
+    </modules>
+  </component>
+</project>
