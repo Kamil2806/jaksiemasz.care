@@ -1,4 +1,7 @@
-package task0.PersonGenerator;
+package task0.personGenerator;
+
+import task0.personGenerator.exceptions.IllegalEmailArgumentException;
+import task0.personGenerator.exceptions.IllegalNameOrSurnameArgumentException;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -10,7 +13,7 @@ public class Validators {
         Matcher matcher = pattern.matcher(nor.toLowerCase());
         if(matcher.matches()) {
             return nor;
-        } else return "Wrong data format";
+        } else throw new IllegalNameOrSurnameArgumentException();
     }
 
     public String isEmailCorrect(String email) {
@@ -18,6 +21,6 @@ public class Validators {
         Matcher matcher = pattern.matcher(email);
         if(matcher.matches()) {
             return email;
-        } else return "Wrong data format";
+        }else throw new IllegalEmailArgumentException();
     }
 }

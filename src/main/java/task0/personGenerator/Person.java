@@ -1,11 +1,11 @@
-package task0.PersonGenerator;
+package task0.personGenerator;
 
 public class Person implements Comparable<Person> {
 
     private String name;
     private String surname;
     private String email;
-    private Validators validators = new Validators();
+    private final Validators validators = new Validators();
 
     public Person(String name, String surname, String email) {
         this.name = validators.isNameOrSurnameCorrect(name);
@@ -39,11 +39,7 @@ public class Person implements Comparable<Person> {
 
     @Override
     public String toString() {
-        return "Person{" +
-                "name='" + name + '\'' +
-                ", surname='" + surname + '\'' +
-                ", email='" + email + '\'' +
-                '}';
+        return "Name: " + name + ", Surname: " + surname + ", Email: " + email + "\n";
     }
 
     @Override

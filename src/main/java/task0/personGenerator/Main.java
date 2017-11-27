@@ -1,4 +1,4 @@
-package task0.PersonGenerator;
+package task0.personGenerator;
 
 import java.util.Collections;
 
@@ -12,10 +12,7 @@ public class Main {
 
         Collections.sort(generator.getPersons());
 
-        for (Person person : generator.getPersons()) {
-            System.out.println(person.getName() + ", " + person.getSurname()
-                    + ", " + person.getEmail() );
-        }
+        System.out.println(generator.getPersons());
 
     }
 }

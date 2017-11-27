@@ -1,4 +1,4 @@
-package task0.factory.pattern;
+package task0.factoryPattern;
 
 public class MainFactory {
 
