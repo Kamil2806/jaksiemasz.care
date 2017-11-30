@@ -1,16 +1,16 @@
 package task1;
 
-import task1.Enum.EnumDestination;
+import task1.Enum.EnumRole;
 import task1.Enum.EnumStatus;
 
 public class Task {
 
     private final String topic;
     private final String description;
-    private final EnumDestination Destination;
+    private final EnumRole Destination;
     private EnumStatus status;
 
-    public Task(String topic, String description, EnumDestination roleDestination, EnumDestination destination, EnumStatus status) {
+    public Task(String topic, String description, EnumRole roleDestination, EnumRole destination, EnumStatus status) {
         this.topic = topic;
         this.description = description;
         this.status = status;
@@ -25,7 +25,7 @@ public class Task {
         return description;
     }
 
-    public EnumDestination getDestination() {
+    public EnumRole getDestination() {
         return Destination;
     }
 

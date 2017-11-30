@@ -1,39 +1,40 @@
 package task1.Leaf;
 
 import task1.Component.Employee;
-import task1.Enum.EnumDestination;
+import task1.Enum.EnumRole;
 import task1.Service.IntroducingService;
 import task1.Report;
-import task1.Service.ReportService;
 import task1.Task;
 
-import java.util.List;
 
 public class Developer implements Employee {
 
+    private final String employeeName;
+    private final EnumRole employeeRole;
+    private Report report;
+
+    public Developer(String employeeName, EnumRole employeeRole) {
+        this.employeeName = employeeName;
+        this.employeeRole = employeeRole;
+        report = new Report();
+    }
+
     @Override
     public String getEmployeeName() {
-        return null;
+        return this.employeeName;
     }
 
     @Override
-    public EnumDestination getEmployeeRole() {
-        return null;
+    public EnumRole getEmployeeRole() {
+        return this.employeeRole;
     }
 
     @Override
-    public void assign(Task task) {
-
-    }
+    public void assign(Task task) { }
 
     @Override
     public Report reportWork() {
-        return ReportService.getReport(this);
-    }
-
-    @Override
-    public List<Task> getEmployeeTask() {
-        return null;
+        return report;
     }
 
     @Override

@@ -1,13 +1,13 @@
 package task1.Component;
 
-import task1.Enum.EnumDestination;
+import task1.Enum.EnumRole;
 
 public abstract class AbstractEmployee implements Employee {
 
     private String employeeName;
-    private EnumDestination employeeRole;
+    private EnumRole employeeRole;
 
-    public AbstractEmployee(String employeeName, EnumDestination employeeRole) {
+    public AbstractEmployee(String employeeName, EnumRole employeeRole) {
         this.employeeName = employeeName;
         this.employeeRole = employeeRole;
     }
@@ -18,7 +18,7 @@ public abstract class AbstractEmployee implements Employee {
     }
 
     @Override
-    public EnumDestination getEmployeeRole() {
+    public EnumRole getEmployeeRole() {
         return employeeRole;
     }
 }

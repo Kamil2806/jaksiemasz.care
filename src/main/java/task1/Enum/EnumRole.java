@@ -1,10 +1,12 @@
 package task1.Enum;
 
-public enum EnumDestination {
+public enum EnumRole {
 
     DEVELOPER,
     TEAM_LEADER,
     DIRECTOR,
     CONTRIBUTOR,
-    TESTER
+    TESTER,
+    CEO,
+    DEVELOPMENT_MANAGER
 }

@@ -4,8 +4,9 @@ import com.google.common.collect.Lists;
 import task1.Component.AbstractEmployee;
 import task1.Component.Employee;
 import task1.Component.Manager;
-import task1.Enum.EnumDestination;
+import task1.Enum.EnumRole;
 import task1.Report;
+import task1.Service.IntroducingService;
 import task1.Service.ReportService;
 import task1.Task;
 
@@ -14,19 +15,21 @@ import java.util.List;
 public class TeamManager extends AbstractEmployee implements Manager {
 
     private final List<Employee> employees;
-    private Integer width;
+    private Integer maxNumOfEmployees;
+    private ReportService reportService = new ReportService();
+    private Report report;
 
-    public TeamManager(String employeeName, EnumDestination employeeRole, List<Employee> employees, Integer width) {
+    public TeamManager(String employeeName, EnumRole employeeRole,
+                       Integer maxNumOfEmployees) {
         super(employeeName, employeeRole);
-        this.width = width;
-        this.employees = Lists.newArrayListWithCapacity(width);
+        this.maxNumOfEmployees = maxNumOfEmployees;
+        this.employees = Lists.newArrayListWithCapacity(maxNumOfEmployees);
+        this.report = new Report();
     }
 
     @Override
     public void hire(Employee employee) {
-        if(canHire()) {
-            employees.add(employee);
-        }
+        if(canHire()) { employees.add(employee); }
     }
 
     @Override
@@ -38,7 +41,7 @@ public class TeamManager extends AbstractEmployee implements Manager {
 
     @Override
     public boolean canHire() {
-        if(employees.size() >= this.width) {
+        if(employees.size() >= this.maxNumOfEmployees) {
             return false;
         }
         else return true;
@@ -48,18 +51,22 @@ public class TeamManager extends AbstractEmployee implements Manager {
     public void assign(Task task) {
         for (Employee employee : employees) {
             if(employee.getEmployeeRole() == task.getDestination()) {
-                employee.getEmployeeTask().add(task);
+                employee.assign(task);
             }
         }
     }
 
     @Override
     public Report reportWork() {
-        return ReportService.getReport();
+        return reportService.getReport(employees);
+    }
+
+    public List<Employee> getEmployees() {
+        return employees;
     }
 
     @Override
-    public List<Task> getEmployeeTask() {
-        return null;
+    public String toString() {
+        return IntroducingService.introduceTeamManager(this);
     }
 }

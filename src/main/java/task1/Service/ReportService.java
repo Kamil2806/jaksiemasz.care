@@ -1,24 +1,22 @@
 package task1.Service;
 
-
-import com.google.common.collect.Lists;
 import task1.Component.Employee;
 import task1.Report;
-import task1.Task;
 
 import java.util.List;
 
 public class ReportService {
 
-    public static Report getReport(Employee employee) {
+    public Report getReport(List<Employee> employees) {
 
-        String report;
-        List<String> lists = Lists.newLinkedList();
-        for (Task t : employee.getEmployeeTask()) {
+        String report = "";
 
-            report = "Task: " + t.getTopic() + ", Status" + t.getStatus();
+        if (employees.isEmpty()) return new Report("NO WORKERS");
+        else {
+            for (Employee employee : employees) {
+                report = report + employee.reportWork().getDescription() + "\n";
+            }
+            return new Report(report);
         }
-
-        return;
     }
 }
