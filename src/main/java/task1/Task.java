@@ -4,6 +4,7 @@ import com.google.common.collect.Lists;
 import task1.Component.Employee;
 import task1.Enum.EnumRole;
 import task1.Enum.EnumStatus;
+import task1.Leaf.Developer;
 import task1.Service.IntroducingService;
 
 import java.util.List;
@@ -14,7 +15,7 @@ public class Task {
     private final String description;
     private final EnumRole Destination;
     private EnumStatus status;
-    private Employee assignedEmployee;
+    private Developer assignedEmployee;
     private static List<Task> tasks = Lists.newLinkedList();
 
     public Task(String topic, String description, EnumRole destination) {
@@ -44,6 +45,9 @@ public class Task {
     }
 
     public void setStatus(EnumStatus status) {
+        if(status == EnumStatus.FINISHED) {
+            this.assignedEmployee.setIsBusy(false);
+        }
         this.status = status;
     }
 
@@ -52,7 +56,7 @@ public class Task {
         return IntroducingService.introduceTask(this);
     }
 
-    public void setAssignedEmployee(Employee assignedEmployee) {
+    public void setAssignedEmployee(Developer assignedEmployee) {
         this.assignedEmployee = assignedEmployee;
     }
 

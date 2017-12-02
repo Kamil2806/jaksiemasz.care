@@ -13,7 +13,7 @@ public interface Employee {
 
     void assign(Task task);
 
-    void setTaskStatus(Task task, EnumStatus enumStatus);
+    void setTaskStatus(EnumStatus enumStatus);
 
     Report reportWork();
 }

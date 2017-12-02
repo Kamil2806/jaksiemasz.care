@@ -1,7 +1,5 @@
 package task1;
 
-import com.sun.org.apache.xpath.internal.SourceTree;
-import org.omg.IOP.ENCODING_CDR_ENCAPS;
 import task1.Component.Employee;
 import task1.Component.Manager;
 import task1.Composite.TeamManager;
@@ -60,15 +58,26 @@ public class CompanyMain {
 
         System.out.println("ASSIGNED TASKS");
         ceo.assign(task1);
+        System.out.println(developer);
         ceo.assign(task2);
         ceo.assign(task3);
         System.out.println(Task.getTasks());
 
-        developer.setTaskStatus(task1, EnumStatus.IN_PROGRESS);
+        System.out.println(developer.reportWork());
+        System.out.println(tester.reportWork());
+        System.out.println(teamLeader.reportWork());
+
+        developer.setTaskStatus(EnumStatus.IN_PROGRESS);
+        System.out.println(Task.getTasks());
+        System.out.println(developer.reportWork());
         System.out.println(Task.getTasks());
 
-//        developer.setTaskStatus(EnumStatus.FINISHED);
-//        System.out.println(Task.getTasks());
+        developer.setTaskStatus(EnumStatus.FINISHED);
+        System.out.println(developer);
+        System.out.println(developer.reportWork());
+        System.out.println(Task.getTasks());
 
+        IntroducingService.introduceCompany((TeamManager) ceo);
+        System.out.println(IntroducingService.getMembers());
     }
 }

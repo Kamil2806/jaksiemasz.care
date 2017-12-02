@@ -61,16 +61,18 @@ public class TeamManager extends AbstractEmployee implements Manager {
     public void assign(Task task) {
         for (Employee employee : employees) {
             if (employee instanceof Developer) {
-                if (employee.getEmployeeRole() == task.getDestination() && !((Developer) employee).isBusy()) {
+                if (employee.getEmployeeRole() == task.getDestination() && !((Developer) employee).getIsBusy()) {
                     task.setStatus(EnumStatus.ASSIGNED);
-                    task.setAssignedEmployee(employee);
+                    task.setAssignedEmployee((Developer)employee);
+                    employee.assign(task);
                 }
             } else employee.assign(task);
         }
     }
 
     @Override
-    public void setTaskStatus(Task task, EnumStatus enumStatus) {
+    public void setTaskStatus(EnumStatus enumStatus) {
+        System.out.println("You have no power here for this moment!");
     }
 
     @Override

@@ -35,11 +35,12 @@ public class Developer implements Employee {
     @Override
     public void assign(Task task) {
         this.task = task;
-        this.report.setDescription("Task: " + task.getTopic() + ", Status: " + task.getStatus());
-        isBusy = true;
+        this.report.setDescription("Task: " + task.getTopic());
+        this.report.setTask(task);
+        this.isBusy = true;
     }
 
-    public void setTaskStatus(Task task, EnumStatus enumStatus) {
+    public void setTaskStatus(EnumStatus enumStatus) {
         this.task.setStatus(enumStatus);
     }
 
@@ -51,7 +52,11 @@ public class Developer implements Employee {
         return IntroducingService.introduceDeveloper(this);
     }
 
-    public boolean isBusy() {
+    public boolean getIsBusy() {
         return isBusy;
+    }
+
+    public void setIsBusy(boolean isBusy) {
+        this.isBusy = isBusy;
     }
 }

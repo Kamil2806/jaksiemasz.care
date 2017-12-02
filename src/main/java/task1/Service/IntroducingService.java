@@ -1,6 +1,7 @@
 package task1.Service;
 
 import task1.Component.Employee;
+import task1.Component.Manager;
 import task1.Composite.TeamManager;
 import task1.Leaf.Developer;
 import task1.Report;
@@ -9,9 +10,11 @@ import task1.Task;
 public class IntroducingService {
 
 
+    private static String members = "";
+
     public static String introduceDeveloper(Developer developer) {
         String busy = "";
-        if(developer.isBusy()) busy = "busy";
+        if(developer.getIsBusy()) busy = "busy";
         else busy = "free";
         return "Name: " + developer.getEmployeeName() +
                 ", Role: " + developer.getEmployeeRole() +
@@ -28,8 +31,8 @@ public class IntroducingService {
                 "\n";
     }
 
-    public static String introduceReport(Report report) {
-        return report.getDescription();
+    public static String introduceReport(Report report, Task task) {
+        return report.getDescription() + ", Status: " + task.getStatus();
     }
 
     private static String getEmployeesNames(TeamManager teamManager) {
@@ -54,5 +57,23 @@ public class IntroducingService {
     private static String getAssignedEmployeeName(Task task) {
         if(task.getAssignedEmployee() == null) return "";
         else return ", Assigned employee: " + task.getAssignedEmployee().getEmployeeName();
+    }
+
+    public static void introduceCompany(TeamManager teamManager) {
+
+        String ManagerName = teamManager.getEmployeeName();
+        String ManagerRole = teamManager.getEmployeeRole().toString();
+        members =members +  "Role: " + ManagerRole + ", Name: " +  ManagerName + "\n      DÓŁ";
+        for (Employee employee : teamManager.getEmployees()) {
+            if(employee instanceof TeamManager) {
+                introduceCompany((TeamManager) employee);
+                members = members + "\n     ";
+            }
+            else members = members + "Role: " + employee.getEmployeeRole() + ", Name: " + employee.getEmployeeName() + " ; ";
+            }
+        }
+
+    public static String getMembers() {
+        return members;
     }
 }
