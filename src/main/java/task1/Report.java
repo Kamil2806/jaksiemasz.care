@@ -6,8 +6,6 @@ public class Report {
 
     private String description;
 
-    public Report(){};
-
     public Report(String description) {
         this.description = description;
     }
@@ -17,6 +15,10 @@ public class Report {
     @Override
     public String toString() {
         return IntroducingService.introduceReport(this);
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 }
 

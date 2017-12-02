@@ -8,15 +8,24 @@ import java.util.List;
 public class ReportService {
 
     public Report getReport(List<Employee> employees) {
+        if (employees.isEmpty() || verifyIfEmployeesHaveNoReports(employees)) {
+            return new Report("NO REPORT");
+        } else return getReportsFromEmployees(employees);
+    }
 
+    private Report getReportsFromEmployees(List<Employee> employees) {
         String report = "";
+        for (Employee employee : employees) {
+                report = report +
+                        employee.reportWork() + ", ";
+            } return new Report(report);
+    }
 
-        if (employees.isEmpty()) return new Report("NO WORKERS");
-        else {
-            for (Employee employee : employees) {
-                report = report + employee.reportWork().getDescription() + "\n";
-            }
-            return new Report(report);
+    private boolean verifyIfEmployeesHaveNoReports(List<Employee> employees) {
+        for (Employee employee : employees) {
+            if (employee.reportWork().getDescription() != "NO REPORT")
+                return false;
         }
+        return true;
     }
 }

@@ -1,10 +1,14 @@
 package task1;
 
+import com.sun.org.apache.xpath.internal.SourceTree;
+import org.omg.IOP.ENCODING_CDR_ENCAPS;
 import task1.Component.Employee;
 import task1.Component.Manager;
 import task1.Composite.TeamManager;
 import task1.Enum.EnumRole;
+import task1.Enum.EnumStatus;
 import task1.Leaf.Developer;
+import task1.Service.IntroducingService;
 
 public class CompanyMain {
 
@@ -13,6 +17,7 @@ public class CompanyMain {
         Manager ceo = new TeamManager("Kamil",
                 EnumRole.CEO, 2);
 
+        System.out.println("CREATE CEO");
         System.out.println(ceo);
 
         Manager developmentManager1 = new TeamManager("Bogdan",
@@ -21,9 +26,14 @@ public class CompanyMain {
         Manager developmentManager2 = new TeamManager("Jacek",
                 EnumRole.DEVELOPMENT_MANAGER, 2);
 
+        System.out.println("CREATE TWO DEVELOPMENT MANAGER'S");
+        System.out.println(developmentManager1);
+        System.out.println(developmentManager2);
+
         ceo.hire(developmentManager1);
         ceo.hire(developmentManager2);
 
+        System.out.println("HIRES TO DEVELOPMENT MANAGER'S BY CEO");
         System.out.println(ceo);
 
         Employee tester = new Developer("Maciek", EnumRole.TESTER);
@@ -36,10 +46,29 @@ public class CompanyMain {
         developmentManager2.hire(teamLeader);
         developmentManager2.hire(developer);
 
-        System.out.println(ceo);
+        System.out.println("HIRES TESTER AND CONTRIBUTOR BY DM1");
         System.out.println(developmentManager1);
+
+        System.out.println("HIRES TEAM LEADER AND DEVELOPER BY DM2");
         System.out.println(developmentManager2);
 
+        System.out.println("CREATE THREE TASKS");
+        Task task1 = new Task("Website", "Do the website", EnumRole.DEVELOPER);
+        Task task2 = new Task("Tests", "Do the tests", EnumRole.TESTER);
+        Task task3 = new Task("Sth", "Do sth", EnumRole.TEAM_LEADER);
+        System.out.println(Task.getTasks());
+
+        System.out.println("ASSIGNED TASKS");
+        ceo.assign(task1);
+        ceo.assign(task2);
+        ceo.assign(task3);
+        System.out.println(Task.getTasks());
+
+        developer.setTaskStatus(task1, EnumStatus.IN_PROGRESS);
+        System.out.println(Task.getTasks());
+
+//        developer.setTaskStatus(EnumStatus.FINISHED);
+//        System.out.println(Task.getTasks());
 
     }
 }
