@@ -77,7 +77,6 @@ public class CompanyMain {
         System.out.println(developer.reportWork());
         System.out.println(Task.getTasks());
 
-        IntroducingService.introduceCompany((TeamManager) ceo);
-        System.out.println(IntroducingService.getMembers());
+        System.out.println(IntroducingService.introduceCompany((TeamManager)ceo));
     }
 }

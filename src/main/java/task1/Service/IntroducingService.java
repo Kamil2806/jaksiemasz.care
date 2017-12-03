@@ -1,7 +1,6 @@
 package task1.Service;
 
 import task1.Component.Employee;
-import task1.Component.Manager;
 import task1.Composite.TeamManager;
 import task1.Leaf.Developer;
 import task1.Report;
@@ -59,21 +58,18 @@ public class IntroducingService {
         else return ", Assigned employee: " + task.getAssignedEmployee().getEmployeeName();
     }
 
-    public static void introduceCompany(TeamManager teamManager) {
-
+    public static String  introduceCompany(TeamManager teamManager) {
         String ManagerName = teamManager.getEmployeeName();
         String ManagerRole = teamManager.getEmployeeRole().toString();
-        members =members +  "Role: " + ManagerRole + ", Name: " +  ManagerName + "\n      DÓŁ";
+        members = members +  "Role: " + ManagerRole + ", Name: " +  ManagerName + "\n        ";
         for (Employee employee : teamManager.getEmployees()) {
             if(employee instanceof TeamManager) {
                 introduceCompany((TeamManager) employee);
-                members = members + "\n     ";
+                members = members + "\n         ";
             }
-            else members = members + "Role: " + employee.getEmployeeRole() + ", Name: " + employee.getEmployeeName() + " ; ";
+            else members = members + "      Role: " + employee.getEmployeeRole() + ", Name: " + employee.getEmployeeName() + ";";
             }
-        }
 
-    public static String getMembers() {
-        return members;
-    }
+            return members;
+        }
 }
