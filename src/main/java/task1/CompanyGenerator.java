@@ -1,7 +1,6 @@
 package task1;
 
 import com.google.common.collect.Lists;
-import org.omg.PortableInterceptor.INACTIVE;
 import task1.Component.Employee;
 import task1.Composite.TeamManager;
 import task1.Enum.EnumRole;
@@ -30,11 +29,22 @@ public class CompanyGenerator {
             }
             else if(i > 0 && i < numOfLevels-1) {
                 generateDM();
-                hireEmployeesByCeo();
+                if(i == 2) hireDMByCeo();
+                else hireDMByDM();
             }
             else {
                 generateDevelopers();
                 hireEmployeesByDM();
+            }
+        }
+    }
+
+    private void hireDMByDM() {
+        int k = numOfCeo;
+        for (int i = 0; i < numOfCeo; i++){
+            while(managers.get(i).canHire()) {
+                managers.get(i).hire(managers.get(k));
+                k++;
             }
         }
     }
@@ -58,7 +68,7 @@ public class CompanyGenerator {
         }
     }
 
-    private void hireEmployeesByCeo() {
+    private void hireDMByCeo() {
         int k = numOfCeo;
         for (int i = 0; i < numOfCeo; i++){
             while(managers.get(i).canHire()) {
