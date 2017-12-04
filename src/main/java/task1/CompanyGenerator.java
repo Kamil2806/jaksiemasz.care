@@ -12,7 +12,7 @@ import java.util.Random;
 public class CompanyGenerator {
 
     private Random random = new Random();
-    private List<TeamManager> managers = Lists.newArrayList();
+    private List<TeamManager> managers = Lists.newLinkedList();
     private List<Employee> employees = Lists.newArrayList();
     private List<String> names = Lists.newArrayList("Mcaciek", "Bogdan", "Stefan", "Remigiusz", "Magdalena");
     private List<EnumRole> developersRoles = Lists.newArrayList(EnumRole.DEVELOPER,
@@ -46,7 +46,7 @@ public class CompanyGenerator {
     }
 
     private void hireEmployeesByDM() {
-        for (int i = iteratorCeo; i < managers.size(); i++){
+        for (int i = 2; i < 5; i++){
                 while (managers.get(i).canHire()) {
                     managers.get(i).hire(employees.get(0));
                     employees.remove(0);
@@ -55,38 +55,32 @@ public class CompanyGenerator {
         }
 
     private void generateDevelopers() {
-        for (int i = 0; i < numOfAllEmployees; i++) {
+        for (int i = 0; i < 8; i++) {
             employees.add(new Developer(getRandomName(), getRandomDevelopersRole()));
         }
     }
 
     private void hireEmployeesByCeo() {
-        iterator = iteratorCeo;
-        for (int i = 0; i < iteratorCeo; i++){
+        int k = 2;
+        for (int i = 0; i < 2; i++){
             while(managers.get(i).canHire()) {
-                managers.get(i).hire(managers.get(iterator));
-                iterator++;
+                managers.get(i).hire(managers.get(k));
+                k++;
             }
         }
     }
 
     private void generateDM() {
-        for (int i = 0; i < numOfAllEmployees; i++) {
-            Integer numOfEmployees = random.nextInt(3)+1;
+        for (int i = 0; i < 4; i++) {
+            Integer numOfEmployees = 2;
             managers.add(new TeamManager(getRandomName(), developmentManagerRole, numOfEmployees));
-            if(i == 0) this.numOfAllEmployees = 0;
-            this.numOfAllEmployees = numOfAllEmployees + numOfEmployees;
-            iteratorDM++;
         }
     }
 
     private void generateRandomNumOfCeo() {
-        Integer numOfCeo = random.nextInt(3)+1;
-        for (int i =0; i < numOfCeo; i++){
-            Integer numOfEmployees = random.nextInt(3)+1;
+        Integer numOfEmployees = 2;
+        for (int i =0; i < 2; i++){
             managers.add(new TeamManager(getRandomName(), ceoRole, numOfEmployees));
-            this.numOfAllEmployees = this.numOfAllEmployees + numOfEmployees;
-            iteratorCeo++;
         }
     }
 
