@@ -25,19 +25,21 @@ public class CompanyGenerator {
 
     public void generateCompany(int numOfLevels) {
         for (int i = 0; i < numOfLevels; i++) {
-            if(i == 0) {
+            if(i == 0 && numOfLevels > 0) {
                 generateRandomNumOfCeo();
             }
-            else if(i > 0 && i < numOfLevels-1) {
+            else if(i > 1 && i != numOfLevels-1 && numOfLevels > 1) {
                 generateDM();
                 hireEmployeesByCeo();
             }
-            else {
+            else if(numOfLevels > 2 && i == numOfLevels-1) {
                 generateDevelopers();
                 hireEmployeesByDM();
             }
+            else System.out.println("Too small size of company");
         }
     }
+
 
     public List<TeamManager> getManagers() {
         return managers;
