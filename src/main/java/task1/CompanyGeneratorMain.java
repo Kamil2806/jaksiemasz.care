@@ -12,8 +12,11 @@ public class CompanyGeneratorMain {
 
         company.generateCompany(3);
 
-        System.out.println(IntroducingService.introduceCompany(company.getManagers().get(0)));
+        System.out.println(company.getManagers());
 
+        for(int i =0; i < company.numOfCeo; i++) {
+            System.out.println(IntroducingService.introduceCompany(company.getManagers().get(i)));
+        }
 
     }
 }

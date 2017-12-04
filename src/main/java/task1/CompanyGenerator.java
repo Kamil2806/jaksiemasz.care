@@ -1,6 +1,7 @@
 package task1;
 
 import com.google.common.collect.Lists;
+import org.omg.PortableInterceptor.INACTIVE;
 import task1.Component.Employee;
 import task1.Composite.TeamManager;
 import task1.Enum.EnumRole;
@@ -19,10 +20,7 @@ public class CompanyGenerator {
             EnumRole.TEAM_LEADER, EnumRole.TESTER, EnumRole.CONTRIBUTOR);
     private EnumRole ceoRole = EnumRole.CEO;
     private EnumRole developmentManagerRole = EnumRole.DEVELOPMENT_MANAGER;
-    Integer numOfAllEmployees = 0;
-    Integer iteratorCeo = 0;
-    Integer iteratorDM = 0;
-    Integer iterator = 0;
+    Integer numOfCeo = 0;
 
 
     public void generateCompany(int numOfLevels) {
@@ -46,7 +44,7 @@ public class CompanyGenerator {
     }
 
     private void hireEmployeesByDM() {
-        for (int i = 2; i < 5; i++){
+        for (int i = numOfCeo; i < managers.size(); i++){
                 while (managers.get(i).canHire()) {
                     managers.get(i).hire(employees.get(0));
                     employees.remove(0);
@@ -55,14 +53,14 @@ public class CompanyGenerator {
         }
 
     private void generateDevelopers() {
-        for (int i = 0; i < 8; i++) {
+        for (int i = 0; i < (managers.size()-numOfCeo)*2; i++) {
             employees.add(new Developer(getRandomName(), getRandomDevelopersRole()));
         }
     }
 
     private void hireEmployeesByCeo() {
-        int k = 2;
-        for (int i = 0; i < 2; i++){
+        int k = numOfCeo;
+        for (int i = 0; i < numOfCeo; i++){
             while(managers.get(i).canHire()) {
                 managers.get(i).hire(managers.get(k));
                 k++;
@@ -71,7 +69,7 @@ public class CompanyGenerator {
     }
 
     private void generateDM() {
-        for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < numOfCeo*2; i++) {
             Integer numOfEmployees = 2;
             managers.add(new TeamManager(getRandomName(), developmentManagerRole, numOfEmployees));
         }
@@ -79,7 +77,8 @@ public class CompanyGenerator {
 
     private void generateRandomNumOfCeo() {
         Integer numOfEmployees = 2;
-        for (int i =0; i < 2; i++){
+        numOfCeo = random.nextInt(3)+1;
+        for (int i =0; i < numOfCeo; i++){
             managers.add(new TeamManager(getRandomName(), ceoRole, numOfEmployees));
         }
     }
