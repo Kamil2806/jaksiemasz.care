@@ -5,6 +5,7 @@ import task1.Component.AbstractEmployee;
 import task1.Component.Employee;
 import task1.Component.Manager;
 import task1.Enum.EnumRole;
+import task1.Enum.EnumSex;
 import task1.Enum.EnumStatus;
 import task1.Leaf.Developer;
 import task1.Report;
@@ -25,9 +26,9 @@ public class TeamManager extends AbstractEmployee implements Manager {
     private Report report;
     private TaskService taskService = new TaskService();
 
-    public TeamManager(String employeeName, EnumRole employeeRole,
-                       Integer maxNumOfEmployees) {
-        super(employeeName, employeeRole);
+    public TeamManager(String employeeName, EnumRole employeeRole, Integer maxNumOfEmployees,
+                       String academy, EnumSex sex, String originCountry, String email) {
+        super(employeeName, employeeRole, academy, sex, originCountry, email);
         this.maxNumOfEmployees = maxNumOfEmployees;
         this.employees = Lists.newArrayListWithCapacity(maxNumOfEmployees);
         this.report = new Report("NO REPORT");

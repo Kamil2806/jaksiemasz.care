@@ -78,5 +78,7 @@ public class CompanyMain {
         System.out.println(Task.getTasks());
 
         System.out.println(IntroducingService.introduceCompany((TeamManager)ceo));
+
+        System.out.println(ceo.reportWork());
     }
 }
