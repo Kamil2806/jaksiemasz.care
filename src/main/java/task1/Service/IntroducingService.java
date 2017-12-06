@@ -26,7 +26,7 @@ public class IntroducingService {
                 ", Report: " + teamManager.getNumberOfTask() +
                 " task in progress" +
                 ", Number of employees: " + teamManager.getNumOfEmployees() +
-                " (" + getEmployeesNames(teamManager) + "]" +
+                " [" + getEmployeesNames(teamManager) + "]" +
                 "\n";
     }
 
