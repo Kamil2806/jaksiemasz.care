@@ -23,10 +23,10 @@ public class IntroducingService {
     public static String introduceTeamManager(TeamManager teamManager) {
         return "Name: " + teamManager.getEmployeeName() +
                 ", Role: " + teamManager.getEmployeeRole() +
-                ", Report: " + teamManager.getNumberOfTask() +
-                " task in progress" +
+        //        ", Report: " + teamManager.getNumberOfTask() +
+        //        " task in progress" +
                 ", Number of employees: " + teamManager.getNumOfEmployees() +
-                " [" + getEmployeesNames(teamManager) + "]" +
+          //      " [" + getEmployeesNames(teamManager) + "]" +
                 "\n";
     }
 

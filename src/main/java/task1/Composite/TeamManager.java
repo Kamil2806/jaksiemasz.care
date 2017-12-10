@@ -12,13 +12,14 @@ import task1.Report;
 import task1.Service.IntroducingService;
 import task1.Service.ReportService;
 import task1.Service.TaskService;
+import task1.Service.ValidatorsService;
 import task1.Task;
 
 import java.util.List;
 
 public class TeamManager extends AbstractEmployee implements Manager {
 
-    private final List<Employee> employees;
+    private List<Employee> employees;
     private List<Task> tasks;
     private Integer maxNumOfEmployees;
     private Integer numOfEmployees = 0;
@@ -26,13 +27,23 @@ public class TeamManager extends AbstractEmployee implements Manager {
     private Report report;
     private TaskService taskService = new TaskService();
 
-    public TeamManager(String employeeName, EnumRole employeeRole, Integer maxNumOfEmployees,
-                       String academy, EnumSex sex, String originCountry, String email) {
-        super(employeeName, employeeRole, academy, sex, originCountry, email);
-        this.maxNumOfEmployees = maxNumOfEmployees;
-        this.employees = Lists.newArrayListWithCapacity(maxNumOfEmployees);
-        this.report = new Report("NO REPORT");
-        this.tasks = Lists.newLinkedList();
+//    public TeamManager(String employeeName, EnumRole employeeRole, Integer maxNumOfEmployees,
+//                       String academy, EnumSex sex, String originCountry, String email) {
+//        super(employeeName, employeeRole, academy, sex, originCountry, email);
+//        this.maxNumOfEmployees = maxNumOfEmployees;
+//        this.employees = Lists.newArrayListWithCapacity(maxNumOfEmployees);
+//        this.report = new Report("NO REPORT");
+//        this.tasks = Lists.newLinkedList();
+//    }
+
+    private TeamManager() {}
+
+    public TeamManager(TeamManagerBuilder teamManagerBuilder) {
+        super(teamManagerBuilder);
+        if(teamManagerBuilder == null) {
+            return;
+        }
+        this.maxNumOfEmployees = teamManagerBuilder.maxNumOfEmployees;
     }
 
     @Override
@@ -78,6 +89,7 @@ public class TeamManager extends AbstractEmployee implements Manager {
 
     @Override
     public Report reportWork() {
+
         return reportService.getReport(employees);
     }
 
@@ -97,4 +109,26 @@ public class TeamManager extends AbstractEmployee implements Manager {
     public Integer getNumOfEmployees() {
         return numOfEmployees;
     }
+
+    public static class TeamManagerBuilder extends AbstractEmployeeBuilder<TeamManagerBuilder> {
+
+        private List<Employee> employees;
+        private List<Task> tasks;
+        private Integer maxNumOfEmployees;
+        private Report report;
+
+        public TeamManagerBuilder(int maxNumOfEmployees){
+            super();
+            this.maxNumOfEmployees = maxNumOfEmployees;
+            this.employees = Lists.newArrayListWithCapacity(maxNumOfEmployees);
+            this.report = new Report("NO REPORT");
+            this.tasks = Lists.newLinkedList();
+        }
+
+        @Override
+        public TeamManager build() {
+            return new TeamManager(this);
+        }
+    }
+
 }

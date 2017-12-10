@@ -1,4 +1,4 @@
-package task0.personGenerator.exceptions;
+package task1.exceptions;
 
 public class IllegalNameOrSurnameArgumentException extends IllegalArgumentException {
 

@@ -1,7 +1,7 @@
 package task0.personGenerator;
 
-import task0.personGenerator.exceptions.IllegalEmailArgumentException;
-import task0.personGenerator.exceptions.IllegalNameOrSurnameArgumentException;
+import task1.exceptions.IllegalEmailArgumentException;
+import task1.exceptions.IllegalNameOrSurnameArgumentException;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

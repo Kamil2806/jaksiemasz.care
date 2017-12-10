@@ -18,7 +18,7 @@ public class Developer extends AbstractEmployee implements Employee {
 
     public Developer(String employeeName, EnumRole employeeRole, Report report, boolean isBusy, Task task,
                      String academy, EnumSex sex, String originCountry, String email) {
-        super(employeeName, employeeRole, academy, sex, originCountry, email);
+        //super(employeeName, employeeRole, academy, sex, originCountry, email);
         this.report = report;
         this.isBusy = isBusy;
         this.task = task;
