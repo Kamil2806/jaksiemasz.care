@@ -1,10 +1,10 @@
 //package task1;
 //
 //import com.google.common.collect.Lists;
-//import task1.Component.Employee;
+//import task1.Employees.Employee;
 //import task1.Composite.TeamManager;
 //import task1.Enum.EnumRole;
-//import task1.Leaf.Developer;
+//import task1.Employees.Developer;
 //
 //import java.util.List;
 //import java.util.Random;

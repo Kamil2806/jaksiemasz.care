@@ -1,13 +1,5 @@
 package task1;
 
-import task1.Component.Employee;
-import task1.Component.Manager;
-import task1.Composite.TeamManager;
-import task1.Enum.EnumRole;
-import task1.Enum.EnumStatus;
-import task1.Leaf.Developer;
-import task1.Service.IntroducingService;
-
 public class CompanyMain {
 
     public static void main(String[] args) {
