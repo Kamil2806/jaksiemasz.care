@@ -1,4 +1,4 @@
-package task0.personGenerator;
+package task1.service;
 
 import task1.exceptions.IllegalEmailArgumentException;
 import task1.exceptions.IllegalNameOrSurnameArgumentException;
@@ -6,7 +6,7 @@ import task1.exceptions.IllegalNameOrSurnameArgumentException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Validators {
+public class ValidatorsService {
 
     public String isNameOrSurnameCorrect(String nor) {
         Pattern pattern = Pattern.compile("[a-z]+");

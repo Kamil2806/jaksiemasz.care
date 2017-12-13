@@ -1,0 +1,12 @@
+package task1.enums;
+
+public enum EnumRole {
+
+    DEVELOPER,
+    TEAM_LEADER,
+    DIRECTOR,
+    CONTRIBUTOR,
+    TESTER,
+    CEO,
+    CEOAGH, CEOMALE, CEOFAMALE, CEOGMAIL, CEOPOLAND, DEVELOPMENT_MANAGER
+}
