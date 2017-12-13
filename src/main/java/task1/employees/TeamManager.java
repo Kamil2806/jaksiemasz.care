@@ -1,17 +1,19 @@
 package task1.employees;
 
 import com.google.common.collect.Lists;
+import task1.employees.ceo.CanHire;
+import task1.employees.ceo.CeoPredicates;
 import task1.enums.EnumRole;
 import task1.enums.EnumStatus;
 import task1.service.IntroducingService;
 import task1.service.ReportService;
 import task1.service.TaskService;
-import task1.employees.canHire.*;
 
 import java.util.List;
 
 public class TeamManager extends AbstractEmployee implements Manager {
 
+    public CanHire canHireType;
     private List<Employee> employees;
     private List<Task> tasks;
     private Integer maxNumOfEmployees;
@@ -19,9 +21,9 @@ public class TeamManager extends AbstractEmployee implements Manager {
     private ReportService reportService = new ReportService();
     private Report report;
     private TaskService taskService = new TaskService();
-    public CanHire canHireType;
 
-    private TeamManager() {}
+    private TeamManager() {
+    }
 
     public TeamManager(Builder teamManagerBuilder) {
         super(teamManagerBuilder);
@@ -37,8 +39,7 @@ public class TeamManager extends AbstractEmployee implements Manager {
         if (canHire(employee)) {
             employees.add(employee);
             this.numOfEmployees++;
-        }
-        else System.out.println("Can't do this");
+        } else System.out.println("Can't do this");
     }
 
     @Override
@@ -64,7 +65,7 @@ public class TeamManager extends AbstractEmployee implements Manager {
                 if (employee.getEmployeeRole() == task.getDestination() && !((Developer) employee).getIsBusy()
                         && task.getStatus() != EnumStatus.ASSIGNED) {
                     task.setStatus(EnumStatus.ASSIGNED);
-                    task.setAssignedEmployee((Developer)employee);
+                    task.setAssignedEmployee((Developer) employee);
                     employee.assign(task);
                     this.getTasks().add(task);
                 }
@@ -106,24 +107,24 @@ public class TeamManager extends AbstractEmployee implements Manager {
 
     public static class Builder extends AbstractEmployeeBuilder<Builder> {
 
+        public CanHire canHireType;
         private List<Employee> employees;
         private List<Task> tasks;
         private Integer maxNumOfEmployees;
         private Report report;
-        public CanHire canHireType;
 
-        public Builder(int maxNumOfEmployees, String name, EnumRole role){
+        public Builder(int maxNumOfEmployees, String name, EnumRole role) {
             super(name, role);
             this.maxNumOfEmployees = maxNumOfEmployees;
             this.employees = Lists.newArrayListWithCapacity(maxNumOfEmployees);
             this.report = new Report("NO REPORT");
             this.tasks = Lists.newLinkedList();
-            if(role == EnumRole.CEOAGH) this.canHireType = new CanHireAGH();
-            else if(role == EnumRole.CEOMALE) this.canHireType = new CanHireMale();
-            else if(role == EnumRole.CEOFAMALE) this.canHireType = new CanHireFamale();
-            else if(role == EnumRole.CEOGMAIL) this.canHireType = new CanHireGmail();
-            else if(role == EnumRole.CEOPOLAND) this.canHireType = new CanHirePol();
-            else this.canHireType = new CanHireAnyone();
+            if (role == EnumRole.CEOAGH) this.canHireType = CeoPredicates.canHireAGH;
+            else if (role == EnumRole.CEOMALE) this.canHireType = CeoPredicates.canHireMale;
+            else if (role == EnumRole.CEOFAMALE) this.canHireType = CeoPredicates.canHireFamale;
+            else if (role == EnumRole.CEOGMAIL) this.canHireType = CeoPredicates.canHireGmail;
+            else if (role == EnumRole.CEOPOLAND) this.canHireType = CeoPredicates.canHirePoland;
+            else this.canHireType = CeoPredicates.canHIreAnyone;
         }
 
         @Override

@@ -1,4 +1,4 @@
-package task1.employees.canHire;
+package task1.employees.ceo;
 
 import task1.employees.Employee;
 import task1.employees.TeamManager;

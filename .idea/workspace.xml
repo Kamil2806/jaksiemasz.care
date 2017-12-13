@@ -5,55 +5,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="072b0ae1-74b2-44d7-8fd4-ace22a77da0d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/task1/employees/canHire/CanHire.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/task1/employees/canHire/CanHireAGH.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/task1/employees/canHire/CanHireAnyone.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/task1/employees/canHire/CanHireFamale.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/task1/employees/canHire/CanHireGmail.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/task1/employees/canHire/CanHireMale.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/task1/employees/canHire/CanHirePol.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/task1/employees/ceo/CeoAgh.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/task1/employees/ceo/CeoFamale.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/task1/employees/ceo/CeoGmail.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/task1/employees/ceo/CeoMale.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/task1/employees/ceo/CeoPoland.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/task1/employees/ceo/ceoAnyone.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/task1/Component/AbstractEmployee$AbstractEmployeeBuilder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/task1/Component/AbstractEmployee.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/task1/Component/Employee.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/task1/Component/Manager.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/task1/Composite/TeamManager$TeamManagerBuilder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/task1/Composite/TeamManager.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/task1/Enum/EnumRole.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/task1/Enum/EnumSex.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/task1/Enum/EnumStatus.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/task1/Leaf/Developer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/task1/Report.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/task1/Service/IntroducingService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/task1/Service/ReportService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/task1/Service/TaskService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/task1/Service/ValidatorsService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/task1/Task.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/task1/Component/AbstractEmployee.java" afterPath="$PROJECT_DIR$/src/main/java/task1/employees/AbstractEmployee.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/task1/Component/Employee.java" afterPath="$PROJECT_DIR$/src/main/java/task1/employees/Employee.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/task1/Component/Manager.java" afterPath="$PROJECT_DIR$/src/main/java/task1/employees/Manager.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/task1/Composite/TeamManager.java" afterPath="$PROJECT_DIR$/src/main/java/task1/employees/TeamManager.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/task1/Enum/EnumRole.java" afterPath="$PROJECT_DIR$/src/main/java/task1/enums/EnumRole.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/task1/Enum/EnumSex.java" afterPath="$PROJECT_DIR$/src/main/java/task1/enums/EnumSex.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/task1/Enum/EnumStatus.java" afterPath="$PROJECT_DIR$/src/main/java/task1/enums/EnumStatus.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/task1/Leaf/Developer.java" afterPath="$PROJECT_DIR$/src/main/java/task1/employees/Developer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/task1/Report.java" afterPath="$PROJECT_DIR$/src/main/java/task1/employees/Report.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/task1/Service/IntroducingService.java" afterPath="$PROJECT_DIR$/src/main/java/task1/service/IntroducingService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/task1/Service/ReportService.java" afterPath="$PROJECT_DIR$/src/main/java/task1/service/ReportService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/task1/Service/TaskService.java" afterPath="$PROJECT_DIR$/src/main/java/task1/service/TaskService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/task1/Service/ValidatorsService.java" afterPath="$PROJECT_DIR$/src/main/java/task1/service/ValidatorsService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/task1/Task.java" afterPath="$PROJECT_DIR$/src/main/java/task1/employees/Task.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/task1/CompanyMain.class" afterPath="$PROJECT_DIR$/out/production/classes/task1/CompanyMain.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/task1/employees/ceo/CeoPredicates.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/task1/employees/canHire/CanHire.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/task1/employees/canHire/CanHireAGH.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/task1/employees/canHire/CanHireAnyone.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/task1/employees/canHire/CanHireFamale.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/task1/employees/canHire/CanHireGmail.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/task1/employees/canHire/CanHireMale.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/task1/employees/canHire/CanHirePol.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/task1/employees/ceo/CeoAgh.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/task1/employees/ceo/CeoFamale.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/task1/employees/ceo/CeoGmail.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/task1/employees/ceo/CeoMale.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/task1/employees/ceo/CeoPoland.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/task1/employees/ceo/ceoAnyone.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/task1/employees/canHire/CanHireAGH.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/task1/employees/canHire/CanHireAnyone.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/task1/employees/canHire/CanHireFamale.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/task1/employees/canHire/CanHireGmail.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/task1/employees/canHire/CanHireMale.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/task1/employees/canHire/CanHirePol.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/task1/employees/ceo/CeoAgh.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/task1/employees/ceo/CeoFamale.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/task1/employees/ceo/CeoGmail.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/task1/employees/ceo/CeoMale.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/task1/employees/ceo/CeoPoland.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/task1/employees/ceo/ceoAnyone.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/task1/employees/canHire/CanHire.java" afterPath="$PROJECT_DIR$/src/main/java/task1/employees/ceo/CanHire.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/task1/Task2Main.class" afterPath="$PROJECT_DIR$/out/production/classes/task1/Task2Main.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/task1/employees/TeamManager$Builder.class" afterPath="$PROJECT_DIR$/out/production/classes/task1/employees/TeamManager$Builder.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/task1/employees/TeamManager.class" afterPath="$PROJECT_DIR$/out/production/classes/task1/employees/TeamManager.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/task1/service/IntroducingService.class" afterPath="$PROJECT_DIR$/out/production/classes/task1/service/IntroducingService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/task1/CompanyGenerator.java" afterPath="$PROJECT_DIR$/src/main/java/task1/CompanyGenerator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/task1/CompanyMain.java" afterPath="$PROJECT_DIR$/src/main/java/task1/CompanyMain.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/task1/Task2Main.java" afterPath="$PROJECT_DIR$/src/main/java/task1/Task2Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/task1/employees/TeamManager.java" afterPath="$PROJECT_DIR$/src/main/java/task1/employees/TeamManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/task1/service/IntroducingService.java" afterPath="$PROJECT_DIR$/src/main/java/task1/service/IntroducingService.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -72,31 +58,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Developer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/task1/employees/Developer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="27" column="25" lean-forward="false" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Report.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/task1/employees/Report.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Task2Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Task2Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/task1/Task2Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="70" column="45" lean-forward="false" selection-start-line="70" selection-start-column="45" selection-end-line="70" selection-end-column="45" />
+            <state relative-caret-position="944">
+              <caret line="55" column="34" lean-forward="false" selection-start-line="55" selection-start-column="34" selection-end-line="55" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -104,61 +70,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Employee.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/task1/employees/Employee.java">
+      <file leaf-file-name="CanHire.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/task1/employees/ceo/CanHire.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+            <state relative-caret-position="72">
+              <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReportService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/task1/service/ReportService.java">
+      <file leaf-file-name="CeoPredicates.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/task1/employees/ceo/CeoPredicates.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="23" column="50" lean-forward="true" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
+            <state relative-caret-position="260">
+              <caret line="18" column="58" lean-forward="false" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IntroducingService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/task1/service/IntroducingService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="33" column="39" lean-forward="false" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
-              <folding>
-                <element signature="e#1118#1119#0" expanded="true" />
-                <element signature="e#1164#1165#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Task.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/task1/employees/Task.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
-              <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-              <folding>
-                <element signature="e#1052#1053#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbstractEmployee.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/task1/employees/AbstractEmployee.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="825">
-              <caret line="96" column="0" lean-forward="true" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1275#1276#0" expanded="true" />
-                <element signature="e#1310#1311#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -166,22 +93,8 @@
       <file leaf-file-name="TeamManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/task1/employees/TeamManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="90" column="19" lean-forward="false" selection-start-line="90" selection-start-column="19" selection-end-line="90" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2379#2380#0" expanded="true" />
-                <element signature="e#2407#2408#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CanHireGmail.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/task1/employees/canHire/CanHireGmail.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="13" column="63" lean-forward="false" selection-start-line="13" selection-start-column="63" selection-end-line="13" selection-end-column="63" />
+            <state relative-caret-position="326">
+              <caret line="126" column="64" lean-forward="false" selection-start-line="126" selection-start-column="64" selection-end-line="126" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -197,6 +110,7 @@
         <option value="Interface" />
         <option value="Enum" />
         <option value="Class" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -572,13 +486,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/task1/Enum/EnumRole.java" />
-        <option value="$PROJECT_DIR$/src/main/java/task1/Service/ReportService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/task1/Service/TaskService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/task1/Enum/EnumStatus.java" />
-        <option value="$PROJECT_DIR$/src/main/java/task1/Report.java" />
-        <option value="$PROJECT_DIR$/src/main/java/task1/Task.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/task1/Enum/EnumSex.java" />
         <option value="$PROJECT_DIR$/src/main/java/task1/Component/Employee.java" />
         <option value="$PROJECT_DIR$/src/main/java/task1/Service/ValidatorsService.java" />
@@ -619,10 +526,17 @@
         <option value="$PROJECT_DIR$/src/main/java/task1/employees/Task.java" />
         <option value="$PROJECT_DIR$/src/main/java/task1/employees/Developer.java" />
         <option value="$PROJECT_DIR$/src/main/java/task1/employees/Report.java" />
-        <option value="$PROJECT_DIR$/src/main/java/task1/employees/TeamManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/task1/Task2Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/task1/service/IntroducingService.java" />
         <option value="$PROJECT_DIR$/src/main/java/task1/service/ReportService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/task1/service/IntroducingService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/task1/firstProgram.js" />
+        <option value="$PROJECT_DIR$/src/main/java/task1/employees/canHire/CanHireAGH.java" />
+        <option value="$PROJECT_DIR$/src/main/java/task1/employees/ceo/CeoAgh.java" />
+        <option value="$PROJECT_DIR$/src/main/java/task1/employees/ceo/CeoPredicate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/task1/employees/canHire/CanHireGmail.java" />
+        <option value="$PROJECT_DIR$/src/main/java/task1/employees/TeamManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/task1/employees/ceo/CanHire.java" />
+        <option value="$PROJECT_DIR$/src/main/java/task1/employees/ceo/CeoPredicates.java" />
+        <option value="$PROJECT_DIR$/src/main/java/task1/Task2Main.java" />
       </list>
     </option>
   </component>
@@ -654,8 +568,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -705,6 +620,16 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="task1" type="462c0819:PsiDirectoryNode" />
+              <item name="employees" type="462c0819:PsiDirectoryNode" />
+              <item name="ceo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jaksiemasz-care" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jaksiemasz-care" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="task1" type="462c0819:PsiDirectoryNode" />
               <item name="enums" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -720,8 +645,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -730,8 +654,8 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Scala" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -993,15 +917,17 @@
       <workItem from="1512910030507" duration="19981000" />
       <workItem from="1512986706471" duration="13977000" />
       <workItem from="1513006882078" duration="3000" />
-      <workItem from="1513011411203" duration="4539000" />
+      <workItem from="1513011411203" duration="8184000" />
+      <workItem from="1513108505787" duration="2152000" />
+      <workItem from="1513182464728" duration="2664000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="200390000" />
+    <option name="totallyTimeSpent" value="208851000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="57" y="-4" width="1309" height="772" extended-state="6" />
+    <frame x="44" y="-4" width="1309" height="772" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1012,12 +938,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33009708" sideWeight="0.5027712" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36245954" sideWeight="0.49722883" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2394822" sideWeight="0.49722883" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14239483" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19952494" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3222486" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1051,6 +977,89 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/task1/Task2Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/task1/employees/ceo/CanHire.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/task1/employees/canHire/CanHireAGH.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="15" column="1" lean-forward="false" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/task1/employees/ceo/CeoPredicates.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/task1/service/ReportService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="23" column="50" lean-forward="false" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/task1/service/IntroducingService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="29" column="39" lean-forward="false" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
+          <folding>
+            <element signature="e#1004#1005#0" expanded="true" />
+            <element signature="e#1050#1051#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/task1/employees/AbstractEmployee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="828">
+          <caret line="62" column="4" lean-forward="false" selection-start-line="62" selection-start-column="4" selection-end-line="62" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1275#1276#0" expanded="true" />
+            <element signature="e#1310#1311#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/task1/employees/TeamManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1674">
+          <caret line="117" column="79" lean-forward="false" selection-start-line="117" selection-start-column="79" selection-end-line="117" selection-end-column="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/task1/employees/canHire/CanHireAnyone.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/task1/employees/Developer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1089,7 +1098,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1098,8 +1106,8 @@
         <state relative-caret-position="504">
           <caret line="33" column="38" lean-forward="false" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
           <folding>
-            <element signature="e#1118#1119#0" expanded="true" />
-            <element signature="e#1164#1165#0" expanded="true" />
+            <element signature="e#1004#1005#0" expanded="true" />
+            <element signature="e#1050#1051#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1109,7 +1117,7 @@
         <state relative-caret-position="540">
           <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding>
-            <element signature="e#1052#1053#0" expanded="true" />
+            <element signature="e#1052#1053#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1132,8 +1140,6 @@
           <caret line="81" column="36" lean-forward="false" selection-start-line="81" selection-start-column="36" selection-end-line="81" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2379#2380#0" expanded="true" />
-            <element signature="e#2407#2408#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1142,19 +1148,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="13" column="63" lean-forward="true" selection-start-line="13" selection-start-column="63" selection-end-line="13" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/task1/employees/canHire/CanHireGmail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="13" column="63" lean-forward="false" selection-start-line="13" selection-start-column="63" selection-end-line="13" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1166,19 +1160,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/task1/employees/Developer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="27" column="25" lean-forward="false" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/task1/employees/Employee.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1187,27 +1172,34 @@
         <state relative-caret-position="113">
           <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding>
-            <element signature="e#1052#1053#0" expanded="true" />
+            <element signature="e#1052#1053#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/task1/employees/TeamManager.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/task1/employees/Developer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="90" column="19" lean-forward="false" selection-start-line="90" selection-start-column="19" selection-end-line="90" selection-end-column="19" />
+        <state relative-caret-position="450">
+          <caret line="27" column="25" lean-forward="false" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/task1/service/IntroducingService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="29" column="39" lean-forward="false" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2379#2380#0" expanded="true" />
-            <element signature="e#2407#2408#0" expanded="true" />
+            <element signature="e#1004#1005#0" expanded="true" />
+            <element signature="e#1050#1051#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/task1/employees/AbstractEmployee.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="96" column="0" lean-forward="true" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+        <state relative-caret-position="828">
+          <caret line="62" column="4" lean-forward="false" selection-start-line="62" selection-start-column="4" selection-end-line="62" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1275#1276#0" expanded="true" />
@@ -1216,32 +1208,112 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/task1/service/IntroducingService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/task1/firstProgram.js" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/task1/employees/canHire/CanHireAGH.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="33" column="39" lean-forward="false" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
-          <folding>
-            <element signature="e#1118#1119#0" expanded="true" />
-            <element signature="e#1164#1165#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="144">
+          <caret line="9" column="8" lean-forward="false" selection-start-line="9" selection-start-column="8" selection-end-line="12" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/task1/service/ReportService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="23" column="50" lean-forward="true" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
+        <state relative-caret-position="324">
+          <caret line="23" column="50" lean-forward="false" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/task1/employees/canHire/CanHireFamale.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/task1/employees/canHire/CanHireMale.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="10" column="11" lean-forward="true" selection-start-line="10" selection-start-column="11" selection-end-line="11" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/task1/employees/ceo/ceoAnyone.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/task1/employees/canHire/CanHirePol.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="10" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/task1/employees/ceo/CeoGmail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/task1/employees/canHire/CanHireGmail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="12" column="11" lean-forward="true" selection-start-line="12" selection-start-column="11" selection-end-line="13" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/task1/employees/canHire/CanHireAnyone.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/task1/employees/TeamManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="126" column="64" lean-forward="false" selection-start-line="126" selection-start-column="64" selection-end-line="126" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/task1/employees/ceo/CanHire.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/task1/Task2Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="70" column="45" lean-forward="false" selection-start-line="70" selection-start-column="45" selection-end-line="70" selection-end-column="45" />
+        <state relative-caret-position="944">
+          <caret line="55" column="34" lean-forward="false" selection-start-line="55" selection-start-column="34" selection-end-line="55" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/task1/employees/ceo/CeoPredicates.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="18" column="58" lean-forward="false" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
+          <folding />
         </state>
       </provider>
     </entry>
